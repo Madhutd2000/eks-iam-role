@@ -1,0 +1,59 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "eks:Describe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:List*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "eks:CreateCluster",
+                "eks:DeleteCluster",
+                "eks:UpdateClusterVersion",
+                "eks:UpdateNodegroupVersion"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:TagResource",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:UntagResource",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:AccessK8sAPI",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "eks:CreateNodegroup",
+                "eks:DeleteNodegroup",
+                "eks:UpdateNodegroupConfig"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:CreateFargateProfile",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "eks:DeleteFargateProfile",
+            "Resource": "*"
+        }
+    ]
+}
